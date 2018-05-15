@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdkExtension
+	xmlns="http://www.sap.com/bi/zen/sdk"
+	id="com.volkswagen.receiver"
+	title="Volkswagen SDK Extension Receiver"
+	version="1.0"
+	vendor="Volkswagen">
+	<group
+		id="VolkswagenComponents"
+		title="Volkswagen Components"
+		visible="true"/>
+	<component
+		id="Receiver"
+		title="Receiver"
+		group="VolkswagenComponents"
+		icon="res/icon.png"
+		handlerType="div"
+		modes="commons m"    
+		databound="true">
+		<requireJs modes="commons m">res/js/receiver</requireJs>
+		<property
+			id="data"
+			title="Data"
+			type="ResultSet"
+			group="DataBinding">
+		</property>
+		<property
+			id="backgroundColor"
+			title="Background Color"
+			type="Color">
+		</property>
+		<property
+			id="parameterData"
+			title="Parameter Data"
+			type="String"
+			visible="false">
+		</property>
+		<property
+			id="filterValue"
+			type="String"
+			title="Selected Values as String"
+			visible="false">
+		</property>
+		<property
+			id="keyValue"
+			type="String"
+			title="Key"
+			visible="false">
+		</property>
+		
+		
+		<initialization>
+			<defaultValue property="LEFT_MARGIN">40</defaultValue>
+			<defaultValue property="TOP_MARGIN">40</defaultValue>
+			<defaultValue property="WIDTH">220</defaultValue>
+			<defaultValue property="HEIGHT">190</defaultValue>
+			<defaultValue property="backgroundColor">blue</defaultValue>
+		</initialization>
+	</component>
+</sdkExtension>

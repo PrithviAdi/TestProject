@@ -1,0 +1,28 @@
+class com.volkswagen.receiver.Receiver extends Component {
+
+	/* Sets the background color. */
+	void setBackgroundColor(/* new color */ String color) {*
+		this.backgroundColor = color;
+	*}
+
+	/* Returns the background color. */
+	String getBackgroundColor() {*
+		return this.backgroundColor;
+	*}
+	
+	/* Sets the parameter data. */
+	String setParameters(/* new Object */ Object data ) {*
+		return this.parameterData =  data;
+	*}
+	
+	/* Returns the parameter data from local storage. */
+	String getParameters() {*
+		return this.parameterData;
+	*}
+	
+	/* Returns the current selected values as filter string  */
+	String getFilterValue(/* Set Characteristics key */ String keyValue, /* Selected Filter Value*/ filterValue) {*
+		return this.keyValue;
+		return this.filterValue;
+	*}
+}
